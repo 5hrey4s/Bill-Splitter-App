@@ -23,8 +23,8 @@ export default {
         "tipbtn-hover-text-color": "#014946",
         "custombtn-text-color": "#5d6b6c",
         "custominput-text-color": "#084643",
-        "selected-text-color":"#26c2ad",
-        "selected-bg-color":"#00484c"
+        "selected-text-color":"#014946",
+        "selected-bg-color":"#9fe8df"
       },
       fontFamily: {
         "space-mono": ['"Space Mono"', "monospace"],

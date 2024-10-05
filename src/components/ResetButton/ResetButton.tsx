@@ -1,5 +1,5 @@
 import "../../App.css";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Action, State } from "../../bill_model";
 
 interface ResetButtonProps {
@@ -19,11 +19,11 @@ export function ResetButton({
 }: ResetButtonProps) {
   const [resetIsActive, setResetIsActive] = useState(false);
 
-  const handleOnClick = () => {
+  const handleOnClick = useCallback(() => {
     dispatch({ type: "RESET" });
     setcustomIsInput(false);
-  };
-
+  }, [dispatch, setcustomIsInput]);
+  
   useEffect(() => {
     if (state.selected || state.bill || state.person) {
       setResetIsActive(true);

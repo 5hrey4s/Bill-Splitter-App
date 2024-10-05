@@ -4,7 +4,6 @@ import { useReducer, useState } from "react";
 import { State, Action } from "../../bill_model";
 import "../../App.css";
 
-
 const initialState: State = {
   bill: "",
   person: "",
