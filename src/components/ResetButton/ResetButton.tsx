@@ -14,7 +14,6 @@ export function ResetButton({
   value,
   state,
   dispatch,
-  customIsInput,
   setcustomIsInput,
 }: ResetButtonProps) {
   const [resetIsActive, setResetIsActive] = useState(false);
